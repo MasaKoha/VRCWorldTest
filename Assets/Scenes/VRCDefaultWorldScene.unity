@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8b3c34a814cc5624aa3bac6fb38f2733, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 45771c369fccdf741b6d07e802268e8e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3322065, g: 0.3627174, b: 0.46474278, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -320,7 +320,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -353,7 +353,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -498,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawns:
   - {fileID: 3480278762663400089}
+  spawnRadius: 0.2
   spawnOrder: 2
   spawnOrientation: 0
   ReferenceCamera: {fileID: 1069902874}
@@ -524,10 +525,10 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 2100000, guid: 04ddb98471e053a43a490e0bcd87661a, type: 2}
-  - {fileID: 2100000, guid: 81a7e302478935041ac9d79d37907ebf, type: 2}
-  - {fileID: 2100000, guid: fad75003a65e2f649ad83e12d50bcf64, type: 2}
-  - {fileID: 2100000, guid: 313a60ffa5e61a14b9d5d3295f4a4fe6, type: 2}
+  - {fileID: 2100000, guid: 05f9399df5fecdf46b9e20114132e0b0, type: 2}
+  - {fileID: 2100000, guid: af43a03c4ed09a547b3eeae6be8b2177, type: 2}
+  - {fileID: 2100000, guid: 81c489851e3e4bc428d241a8b7de0e56, type: 2}
+  - {fileID: 2100000, guid: 568f3eea068810940bb13de3cc6ad731, type: 2}
   LightMapsNear: []
   LightMapsFar: []
   LightMode: 0
@@ -654,7 +655,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 313a60ffa5e61a14b9d5d3295f4a4fe6, type: 2}
+  - {fileID: 2100000, guid: 568f3eea068810940bb13de3cc6ad731, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
